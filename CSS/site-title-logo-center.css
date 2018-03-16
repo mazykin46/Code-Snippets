@@ -1,0 +1,49 @@
+/* Genesis navigation layout with centered logo (no links on either side though!) */
+
+/* ## Title Area
+--------------------------------------------- */
+
+.title-area,
+.header-full-width .title-area {
+    text-align: center;
+    width: 100%;
+}
+
+.header-image .title-area {
+	margin: 0 auto;
+	max-width: 333px; /* Change to desired output width */
+	padding: 15px 0 0;
+}
+
+.header-image .site-title > a {
+	background-position: center !important;
+	background-size: contain !important;
+	float: none;
+    width: auto;
+    display: block;
+}
+
+.site-title {
+	margin-bottom: 0;
+}
+
+.site-title a {
+    width: 333px; /* Change to desired output width */
+    height: 75px; /* Change to desired output height */
+}
+
+.header-image .site-title {
+	display: block;
+	text-indent: -9999px;
+    min-height: 75px; /* Change to desired output height */
+}
+
+
+/* ## Header Right Widget Area
+Moves nav below logo, centers links, and spans full-width.
+--------------------------------------------- */
+
+.site-header .widget-area {
+	text-align: center;
+	width: 100%;
+}
