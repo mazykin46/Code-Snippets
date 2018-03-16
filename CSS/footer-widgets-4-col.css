@@ -1,0 +1,54 @@
+/* Add styles for 4 responsive columns in the footer widget area. */
+
+.footer-widgets .wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3,
+.footer-widgets-4 {
+    -ms-flex-order: 1;
+    order: 0;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    color: #fff;
+}
+
+.footer-widgets .widgettitle {
+    display: none;
+}
+
+.footer-widgets a {
+    color: #fff;
+}
+
+.footer-widgets a:hover,
+.footer-widgets a:focus {
+    color: #dbdbdb;
+}
+
+@media only screen and (max-width: 860px) {
+    .footer-widgets-1,
+    .footer-widgets-2,
+    .footer-widgets-3,
+    .footer-widgets-4 {
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+				margin-bottom: 20px;
+        font-size: 16px;
+    }
+}
