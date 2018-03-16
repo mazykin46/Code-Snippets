@@ -1,0 +1,8 @@
+/*  Add .full-width and .featured-image classes to force full width layout. 
+    Useful for hero images to break out of the site layout. */
+
+.full-width,
+.featured-image-class {
+    width: 100vw;
+    margin-left: calc(50% - 50vw) !important
+}
