@@ -1,0 +1,29 @@
+<style>
+
+table {
+    table-layout: fixed;
+}
+
+td::before {
+    content: attr(data-th) ": ";
+    font-weight: 700;
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+td.no-before:before {
+    content: initial;
+}
+
+@media (min-width: 860px) {
+    td::before {
+        display: none;
+    }
+    
+    th, td {
+        display: table-cell;
+    }
+}
+
+</style>
